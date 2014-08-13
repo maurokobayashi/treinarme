@@ -109,7 +109,7 @@ a:hover { border-color: #48ADD6; }
 		-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
 		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
 	}
-	.button.search { font-size: 15px; letter-spacing: .06em; height: 45px; background-color: #48ADD6; border-radius: 3px; }
+	.button.search { font-size: 15px; letter-spacing: .06em; height: 44px; background-color: #48ADD6; border-radius: 3px; }
 	.button.how-it-works,
 	.button.more-info {
 		color: #222; font-size: 13px; font-weight:600; letter-spacing: .06em;
@@ -304,6 +304,7 @@ a:hover { border-color: #48ADD6; }
 
 	/* SEARCH INPUT */
 	.header-search.active { border-color: #48ADD6; }
+	.header-search h3 { color: #666; letter-spacing: -.06em; }
 	.header-search .search-input .fa { font-size: 15px; font-weight: 300; color: #48ADD6; }
 
 	/* SEARCH ADVANCED */
@@ -347,10 +348,10 @@ a:hover { border-color: #48ADD6; }
 		BANNER SEARCH
 	------------------------------------------------------------------------- */
 
-	.banner-search .tab-title { color: #222; background-color: rgba(255,255,255,0.9); border-top: 1px dotted #cecece; border-right: 1px dotted #cecece; }
+	.banner-search .tab-title { color: #666; background-color: rgba(255,255,255,0.9); border-top: 1px dotted #666; border-right: 1px dotted #666; }
 	.banner-search .tab-title:hover { background-color: rgba(255,255,255,1); }
-	.banner-search .tab-title > a { color: #222; }
-	.banner-search .tab-title.active { background-color: rgba(255,255,255,0.95); border-top: 1px solid transparent; border-right: 0; }
+	.banner-search .tab-title > a { color: #666; font-size: 15px; }
+	.banner-search .tab-title.active { background-color: rgba(255,255,255,0.95); border-top: 1px dotted #666; border-right: 1px dotted #666; }
 	.banner-search .tab-title.active > a { color: #1D96C7; font-size: 15px; font-weight: 600; }
 	.banner-search .tab-content-list { background-color: rgba(255,255,255,0.95); border-color: #48ADD6; }
 
