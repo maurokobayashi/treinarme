@@ -537,6 +537,9 @@ body.enable-fixed-header { padding-top: 84px; }
 		font-weight: 500;
 		padding-left: 170px;
 	}
+	.value-proposition .subheading strong {
+		font-weight: 900;
+	}
 	.value-proposition .call-to-action {
 		margin-top: 20px;
 		padding-left: 170px;
@@ -553,7 +556,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.banner-search .tab-title:hover { margin-top: -5px; padding-bottom: 5px; }
 	.banner-search .tab-title.active:hover { margin-top: 0; padding-bottom: 0; }
 	.banner-search .tab-title > a { display: block; padding: 12px 30px; border: 0; }
-	.banner-search .tab-content-list { padding: 20px 0; border-top: 3px solid transparent; border-radius: 0 5px 5px 5px; }
+	.banner-search .tab-content-list { padding: 20px 0; border-top: 3px solid transparent; border-bottom: 2px solid transparent; border-radius: 0 5px 5px 5px; }
 	.banner-search .tab-content { display: none; }
 	.banner-search .tab-content.active { display: block; }
 	.banner-search form { margin: 0; text-align: left; padding: 10px 0 10px 25px; }
@@ -875,7 +878,7 @@ body.enable-fixed-header { padding-top: 84px; }
 
 ----------------------------------------------------------------------------- */
 
-#testimonials { position: relative; padding: 110px 0; z-index: 10; }
+#testimonials { position: relative; padding: 80px 0; z-index: 10; }
 #testimonials .testimonials-inner { position: relative; padding-left: 290px; }
 #testimonials .active-portrait { position: absolute; top: -5px; left: 0; margin: 0; width: 220px; height: 220px; overflow: hidden; border-radius: 50%; border: 10px solid transparent; }
 #testimonials .active-portrait img { border-radius: 50%; }

@@ -119,7 +119,7 @@ a:hover { border-color: #48ADD6; }
 	.button.how-it-works:hover,
 	.button.more-info:hover {
 		color: #fff;
-		background-color: rgba(0,0,0,0.8); }
+		background-color: #666; border-color: #666; }
 	.button.find-instructor {
 		color: #48ADD6; font-size: 16px; font-weight:600; letter-spacing: .06em;
 		border-radius: 25px; background-color: #fff;
@@ -620,7 +620,7 @@ background-image: -ms-radial-gradient(closest-corner,rgba(16,47,70,0) 60%,rgba(1
 	#bottom-panel .default-form input { color: #999999; background-color: #241c1f; }
 	#bottom-panel .default-form .input-group { background-color: #222; }
 	#bottom-panel .default-form .input-group input { background-color: transparent; }
-	#bottom-panel .default-form .input-group button { color: #48ADD6; }
+	#bottom-panel .default-form .input-group button { color: #fff; }
 
 
 /* -----------------------------------------------------------------------------
