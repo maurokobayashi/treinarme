@@ -338,7 +338,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.service-container .service-icon { display: inline-block; width: 130px; height: 130px; line-height: 130px; border-radius: 50%; }
 	.service-container .service-icon .fa { font-size: 55px; vertical-align: middle; }
 	.service-container .service-icon-custom { display: inline-block; width: 150px; height: 150px; background-position: center; background-repeat: no-repeat; }
-	.guarantee { font-size: 18px; text-align:center; color: #222; margin-top: 50px; }
+	.guarantee { font-size: 18px; text-align:center; color: #222; margin-top: 70px; }
 	.guarantee strong { font-weight: 700; }
 
 	/* -------------------------------------------------------------------------
