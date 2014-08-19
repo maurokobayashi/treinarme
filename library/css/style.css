@@ -226,7 +226,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.custom-list > li { margin: 0; padding: 0; list-style-type: none; }
 	.custom-list > li:before { display: none; }
 	.check-list { margin: 24px 0 0 0; padding: 0; list-style-type: none; }
-	.check-list > li { position: relative; margin: 4px 0 0 0; padding: 0 0 0 24px; list-style-type: none; }
+	.check-list > li { position: relative; margin: 6px 0 0 0; padding: 0 0 0 24px; list-style-type: none; }
 	.check-list > li:first-child { margin: 0; }
 	.check-list > li:before { display: inline-block; position: absolute; top: 5px; left: 0; font-size: 14px;
 		font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\f00c"; }

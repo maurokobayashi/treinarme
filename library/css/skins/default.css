@@ -162,8 +162,9 @@ a:hover { border-color: #48ADD6; }
 		LISTS
 	------------------------------------------------------------------------- */
 
-	.check-list > li:before { color: #f1155a; }
+	.check-list > li:before { color: #48ADD6; }
 	.check-list > li.unchecked:before { color: #423338; }
+	.check-list > li { color: #777; }
 
 	/* -------------------------------------------------------------------------
 		LOADING ANIM
@@ -435,6 +436,7 @@ a:hover { border-color: #48ADD6; }
 		CONTENT SECTION
 	------------------------------------------------------------------------- */
 
+	.content-section.why { background-color: #f0f0f0; }
 	.content-section.our-team { background: #f3f3f3 url( '../../../dummies/content_img_03.jpg' ) center bottom no-repeat; }
 
 	/* -------------------------------------------------------------------------

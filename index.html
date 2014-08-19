@@ -100,13 +100,13 @@
 
 							<!-- HEADER REGISTER : begin -->
 							<div class="header-register">
-								<button class="register-toggle header-btn" onclick="findInstructor();">Encontre grátis</button>
+								<button class="login-toggle header-btn" onclick="howItWorks();">Como funciona</button>
 							</div>
 							<!-- HEADER REGISTER : end -->
 
 							<!-- HEADER LOGIN : begin -->
 							<div class="header-login">
-								<button class="login-toggle header-btn" onclick="howItWorks();">Como funciona</button>
+								<button class="register-toggle header-btn" onclick="whyDoINeed();">Porque eu preciso?</button>
 							</div>
 							<!-- HEADER LOGIN : end -->
 
@@ -357,18 +357,6 @@
 		<!-- BANNER : end -->
 
 		<!-- CORE : begin -->
-		<script type="text/javascript">
-			howItWorks = function() {
-				$('html, body').animate({
-	        scrollTop: $('#core').offset().top-84
-	    	}, 1000);
-			}
-			findInstructor = function() {
-				$('html, body').animate({
-	        scrollTop: $('#banner').offset().top-84
-	    	}, 1000);
-			}
-		</script>
 		<div id="core">
 
 			<!-- CONTENT SECTION - SERVICES : begin -->
@@ -405,7 +393,7 @@
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-heart"></i></p>
 								<h3 class="service-title">Sinta-se melhor</h3>
-								<p>Queremos que ao final do treino você vá para o chuveiro com a sensação de que valeu a pena. Seu corpo pedirá mais, e nós estaremos aqui.</p>
+								<p>Amarre o tênis e vamos treinar! Queremos que ao final do dia você se sinta melhor, mais saudável e com orientação profissional.</p>
 								<p><a href="#" class="button more-info"></i> mais informações</a></p>
 							</div>
 							<!-- SERVICE 3 : end -->
@@ -425,6 +413,35 @@
 
 		</div>
 		<!-- CORE : end -->
+
+		<!-- CONTENT SECTION: begin -->
+		<section id="why" class="content-section why">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7">
+						<h3 style="width:80%;">Porque eu realmente preciso treinar com um profissional?</h3>
+						<ul class="check-list">
+							<li>Acompanhamento e atendimento individualizados e exclusivos</li>
+							<li>Flexibilidade de local e horário conciliando sua rotina pessoal e profissional</li>
+							<li>Resultados melhores na saúde e estética, pela adaptação do treino à expectativa do cliente e suas possibilidades biológicas</li>
+							<li>Redução do risco de lesões pela supervisão e correção dos exercícios</li>
+							<li>Maior comprometimento (média de abandono 8x inferior à academia)</li>
+							<li>Eles estudaram em média 8 anos para te orientar da melhor forma</li>
+						</ul>
+						<p class="cta-button call-to-action">
+							<a href="#" onclick="findInstructor();" class="button find-instructor">Encontre o seu personal trainer</a>
+						</p>
+					</div>
+					<div class="col-sm-5">
+						<p>
+							<img src="http://www.goldsgym.com.sg/qws/slot/u50055/Golds%20Gym%20Singapore%20Fitness%20Buddy%20pic%203.jpg" alt="" style="border-radius:50px; width: 90%; border: 10px solid #fff; ">
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- CONTENT SECTION : end -->
 
 		<!-- TESTIMONIALS : begin -->
 		<div id="testimonials">
@@ -505,7 +522,7 @@
 									<div class="col-md-6">
 										<ul class="custom-list">
 
-											<li><a href="#">ola@treinar.me</a></li>
+											<li><a href="mailto:ola@treinar.me">ola@treinar.me</a></li>
 											<li><a href="https://www.facebook.com/treinarme"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;treinarme</a></li>
 											<li><a href="https://www.twitter.com/treinarme"><i class="fa fa-twitter"></i>&nbsp;&nbsp;treinarme</a></li>
 										</ul>
@@ -549,9 +566,26 @@
 		<![endif]-->
 		<script src="library/js/owl.carousel.min.js" type="text/javascript"></script>
 		<script src="library/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-		<script src="library/twitter/jquery.tweet.min.js" type="text/javascript"></script>
 		<script src="library/js/scripts.js" type="text/javascript"></script>
 		<!-- SCRIPTS : end -->
+
+		<script type="text/javascript">
+			howItWorks = function() {
+				$('html, body').animate({
+	        scrollTop: $('#core').offset().top-84
+	    	}, 800);
+			}
+			findInstructor = function() {
+				$('html, body').animate({
+	        scrollTop: $('#banner').offset().top-84
+	    	}, 800);
+			}
+			whyDoINeed = function() {
+				$('html, body').animate({
+	        scrollTop: $('#why').offset().top-84
+	    	}, 800);
+			}
+		</script>
 
 	</body>
 </html>
