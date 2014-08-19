@@ -100,47 +100,13 @@
 
 							<!-- HEADER REGISTER : begin -->
 							<div class="header-register">
-								<button class="register-toggle header-btn"><i class="fa fa-plus-circle"></i> Criar conta</button>
-								<div class="header-form">
-									<form action="index.html" class="default-form">
-										<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> Preencha todos os campos. <i class="fa fa-times close"></i></p>
-										<p class="form-row">
-											<input class="required email" type="text" placeholder="Email">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Senha">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Repita a senha">
-										</p>
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-plus-circle"></i> Criar conta</button>
-										</p>
-									</form>
-								</div>
+								<button class="register-toggle header-btn" onclick="findInstructor();">Encontre grátis</button>
 							</div>
 							<!-- HEADER REGISTER : end -->
 
 							<!-- HEADER LOGIN : begin -->
 							<div class="header-login">
-								<button class="login-toggle header-btn"><i class="fa fa-user"></i> Entrar</button>
-								<div class="header-form">
-									<form action="index.html" class="default-form">
-										<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> Preencha todos os campos. <i class="fa fa-times close"></i></p>
-										<p class="form-row">
-											<input class="required email" type="text" placeholder="Email">
-										</p>
-										<p class="form-row">
-											<input class="required" type="password" placeholder="Senha">
-										</p>
-										<p class="form-row">
-											<button class="submit-btn button"><i class="fa fa-user"></i> Entrar</button>
-										</p>
-										<p class="form-row forgot-password">
-											<a href="#">Esqueci minha senha</a>
-										</p>
-									</form>
-								</div>
+								<button class="login-toggle header-btn" onclick="howItWorks();">Como funciona</button>
 							</div>
 							<!-- HEADER LOGIN : end -->
 
@@ -187,12 +153,12 @@
 			<div class="value-proposition">
 				<div class="container">
 					<div class="heading">
-						Treine com especialistas
+						Encontre o seu personal trainer
 					</div>
 					<div class="subheading">
 						<p>
-							Encontre profissionais, faça treinos melhores e que cabem no seu bolso.
-							<br>Escolha quando e onde quer treinar. Eles vão até você, sério.
+							Serviço gratuito para você encontrar o personal trainer mais indicado às suas necessidades.
+							<br>Selecionamos profissionais de acordo seu objetivo, localização e critérios pessoais de escolha.
 						</p>
 					</div>
 					<div class="call-to-action">
@@ -207,7 +173,7 @@
 					<div class="banner-search-inner">
 						<ul class="custom-list tab-title-list clearfix">
 							<li class="tab-title active"><a href="#swap">Quero treinar</a></li>
-							<li class="tab-title"><a href="#book">Oferecer treino</a></li>
+							<!-- <li class="tab-title"><a href="#book">Oferecer treino</a></li> -->
 							<!-- <li class="tab-title"><a href="#rent">Rent</a></li> -->
 						</ul>
 						<ul class="custom-list tab-content-list">
@@ -217,23 +183,62 @@
 								<form class="default-form" action="index.html">
 
 									<!-- ATIVIDADE : begin -->
-									<span class="select-box activity" title="Que atividade deseja fazer?">
-										<select name="activity" data-placeholder="Que atividade deseja fazer?">
-											<option value="1">Ciclismo</option>
-											<option value="2">Corrida ou caminhada</option>
-											<option value="3">Dança</option>
-											<option value="4">Lutas</option>
-											<option value="5">Musculação</option>
-											<option value="6">Natação</option>
+									<span class="select-box activity" title="Qual o seu objetivo?">
+										<select name="activity" data-placeholder="Qual o seu objetivo?">
+											<option>Qual o seu objetivo?</option>
+											<option value="2">Condicionamento físico</option>
+											<option value="5">Correção postural</option>
+											<option value="0">Corrida ou caminhada</option>
+											<option value="5">Emagrecimento</option>
+											<option value="5">Fortalecimento</option>
+											<option value="7">Gravidez</option>
+											<option value="5">Hipertrofia</option>
+											<option value="5">Lutas</option>
+											<option value="9">Musculação</option>
+											<option value="5">Natação ou hidroginástica</option>
 											<option value="7">Pilates</option>
-											<option value="8">Treino funcional</option>
-											<option value="9">Yoga</option>
+											<option value="4">Portadores de necessidades</option>
+											<option value="4">Pós operatório</option>
+											<option value="7">Preparação para testes</option>
+											<option value="7">Terceira idade</option>
+											<option value="8">Treinamento funcional</option>
 											<option value="0">Outra...</option>
 										</select>
 									</span>
 									<!-- ATIVIDADE : end -->
+
 									<!-- PLACE : begin -->
-									<span class="select-box place" title="Cidade ou região">
+									<span class="offer-place">
+										<input type="text" placeholder="Bairro (ex: Moema)">
+										<i class="fa fa-map-marker" style="color: #48ADD6; position: absolute;left: 258px;top: 24px;"></i>
+									</span>
+									<!-- PLACE : end -->
+
+									<!-- PEOPLE : begin -->
+									<span class="select-box criteria" title="Priorizar por">
+										<select name="criteria" data-placeholder="Priorizar por">
+											<option>Priorizar por</option>
+											<option value="1">Recomendações</option>
+											<option value="2">Preço</option>
+											<option value="3">Experiência</option>
+											<option value="4"></option>
+										</select>
+									</span>
+									<!-- PEOPLE : end -->
+
+									<!-- NAME : begin -->
+									<span class="fullname">
+										<input type="text" placeholder="Nome completo">
+									</span>
+									<!-- NAME : end -->
+
+									<!-- CELULAR : begin -->
+									<span class="mobile">
+										<input type="text" placeholder="Telefone">
+									</span>
+									<!-- CELULAR : end -->
+
+									<!-- <span class="select-box place" title="Cidade ou região">
 										<select name="place" data-placeholder="Cidade ou região">
                       <option value="1">São Paulo, Centro</option>
                       <option value="1">São Paulo, Norte</option>
@@ -257,16 +262,16 @@
                       <option value="1">Sorocaba</option>
                       <option value="1">Outra...</option>
 										</select>
-									</span>
+									</span> -->
 									<!-- PLACE : end -->
 									<!-- DATE : begin -->
-									<span class="calendar-input input-left" title="Quando?">
+									<!-- <span class="calendar-input input-left" title="Quando?">
 										<input type="text" name="date" placeholder="Quando?" data-dateformat="dd/mm/yy">
 										<i class="fa fa-calendar"></i>
-									</span>
+									</span> -->
 									<!-- DATE : end -->
 									<!-- DURAÇÃO : begin -->
-									<span class="select-box period" title="Duração">
+									<!-- <span class="select-box period" title="Duração">
 										<select name="period" data-placeholder="Duração">
 											<option value="1">1 hs</option>
 											<option value="2">2 hs</option>
@@ -277,10 +282,10 @@
 											<option value="7">7 hs</option>
 											<option value="8">8 hs</option>
 										</select>
-									</span>
+									</span> -->
 									<!-- DURAÇÃO : end -->
 									<!-- PEOPLE : begin -->
-									<span class="select-box people" title="Quantidade de pessoas">
+									<!-- <span class="select-box people" title="Quantidade de pessoas">
 										<select name="people">
 											<option value="1" selected>Sozinho(a)</option>
 											<option value="2">2 pessoas</option>
@@ -292,7 +297,7 @@
 											<option value="8">8 pessoas</option>
 											<option value="9">9 ou mais</option>
 										</select>
-									</span>
+									</span> -->
 									<!-- PEOPLE : end -->
 
 									<!-- SUBMIT : begin -->
@@ -375,8 +380,8 @@
 							<!-- SERVICE 1 : begin -->
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-search"></i></p>
-								<h3 class="service-title">Encontre</h3>
-								<p>Encontre os melhores profissionais de educação física da sua região. Veja avaliações e comentários de quem já treinou com eles.</p>
+								<h3 class="service-title">Faça uma busca</h3>
+								<p>Informe seu objetivo, local de treino e o critério de seleção (mais recomendados, melhores preços ou mais experientes).</p>
 								<p><a href="#" class="button more-info"></i> mais informações</a></p>
 							</div>
 							<!-- SERVICE 1 : end -->
@@ -386,9 +391,9 @@
 
 							<!-- SERVICE 2 : begin -->
 							<div class="service-container">
-								<p class="service-icon"><i class="fa fa-calendar"></i></p>
-								<h3 class="service-title">Organize</h3>
-								<p>Marque seu treino e organize tudo por aqui. Converse, tire dúvidas, combine os detalhes e pague como preferir. 100% de garantia.*</p>
+								<p class="service-icon"><i class="fa fa-phone"></i></p>
+								<h3 class="service-title">Atenda o telefone</h3>
+								<p>Em alguns minutos nossa equipe irá analisar suas necessidades e entrar em contato para te indicar os melhores personal trainers.</p>
 								<p><a href="#" class="button more-info"></i> mais informações</a></p>
 							</div>
 							<!-- SERVICE 2 : end -->
@@ -399,9 +404,8 @@
 							<!-- SERVICE 3 : begin -->
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-heart"></i></p>
-								<h3 class="service-title">Sinta-se bem</h3>
-								<!-- <p>Pague online com total segurança no cartão de crédito. Se houver algum imprevisto, seu dinheiro será automaticamente reembosado.</p> -->
-								<p>Queremos que ao final do treino você entre no chuveiro a sensação de que valeu a pena. Seu corpo irá pedir mais, e nós estaremos aqui!</p>
+								<h3 class="service-title">Sinta-se melhor</h3>
+								<p>Queremos que ao final do treino você vá para o chuveiro com a sensação de que valeu a pena. Seu corpo pedirá mais, e nós estaremos aqui.</p>
 								<p><a href="#" class="button more-info"></i> mais informações</a></p>
 							</div>
 							<!-- SERVICE 3 : end -->
@@ -412,7 +416,7 @@
 					<div class="guarantee row">
 						<p>
 				      <img alt="Shield" height="30" src="guarantee.png" style="margin-right: 10px; vertical-align: -8px" width="25">
-				      <strong>*100% do seu dinheiro de volta.</strong> Seja reembolsado na hora, caso haja problemas ou imprevistos.
+				      <strong>O personal trainer certo pra você.</strong> Saúde é coisa séria. Encontre o profissional mais indicado.
 				    </p>
 					</div>
 				</div>
@@ -434,7 +438,7 @@
 						<div class="testimonial">
 							<p class="portrait"><img src="http://uouapps.com/casa2/dummies/portrait_02_200.jpg" alt="Ricardo F."></p>
 							<blockquote class="quote">
-								<p>"Estou sempre viajando a trabalho, por isso preciso contar com personal trainers onde eu estiver. Se houver um imprevisto, não quero perder meu investimento."</p>
+								<p>"Queria treinar na academia do condomínio, por isso procurei um personal trainer que atendesse no meu bairro. Fechei um pacote mensal e na mesma semana já estava treinando."</p>
 								<footer><cite>Ricardo F. (executivo) - São Paulo, SP</cite></footer>
 							</blockquote>
 						</div>
@@ -444,21 +448,11 @@
 						<div class="testimonial">
 							<p class="portrait"><img src="dummies/portrait_02_200.jpg" alt="Jenny"></p>
 							<blockquote class="quote">
-								<p>"Corro 2x por semana em parques e sempre achei que fosse caro treinar com um personal. Quero pesquisar preços, recomendações, tirar dúvidas e agendar o treino com agilidade."</p>
+								<p>"Por recomendação médica, comecei a correr no Pq. do Ibirapuera. Mas queria um profissional que fosse bem avaliado e recomendado pelos clientes."</p>
 								<footer><cite>Julia R. (estudante) - São Paulo, SP</cite></footer>
 							</blockquote>
 						</div>
 						<!-- TESTIMONIAL 2 : end -->
-
-						<!-- TESTIMONIAL 3 : begin -->
-						<div class="testimonial">
-							<p class="portrait"><img src="dummies/portrait_03_200.jpg" alt="Jenny"></p>
-							<blockquote class="quote">
-								<p>"Queria começar a praticar atividade física, mas não tenho saco pra academia. Como tenho 2 filhos, preciso de um personal para treinar no meu próprio condomínio."</p>
-								<footer><cite>Renata B. (psicóloga) - São Bernardo, SP</cite></footer>
-							</blockquote>
-						</div>
-						<!-- TESTIMONIAL 3 : end -->
 
 					</div>
 					<!-- TESTIMONIAL LIST : end -->
@@ -472,7 +466,7 @@
 				</div>
 
 				<div class="call-to-action">
-					<a href="#" onclick="findInstructor();" class="button find-instructor">Encontre profissinais</a>
+					<a href="#" onclick="findInstructor();" class="button find-instructor">Encontre o seu personal trainer</a>
 				</div>
 			</div>
 		</div>
@@ -488,7 +482,7 @@
 						<div class="widget about-widget">
 							<div class="widget-content">
 								<p><img src="favicon.png" style="width:68px; border-radius: 3px;" alt="Treinar.me"></p>
-								<p>O Treinar.me une pessoas a profissionais especializados a um clique de distância.</p>
+								<p>O Treinar.me une pessoas aos melhores profissionais a um clique de distância.</p>
 							</div>
 						</div>
 						<!-- ABOUT WIDGET : end -->
@@ -503,16 +497,17 @@
 								<div class="row">
 									<div class="col-md-6">
 										<ul class="custom-list">
-											<li><a href="#">Procure um treino</a></li>
+											<li><a href="#" onclick="findInstructor();">Encontre um profissional</a></li>
 											<li><a href="#">Ofereça seu serviço</a></li>
-											<li><a href="#">Como funciona</a></li>
+											<li><a href="#" onclick="howItWorks();">Como funciona</a></li>
 										</ul>
 									</div>
 									<div class="col-md-6">
 										<ul class="custom-list">
-											<li><a href="#">Criar conta</a></li>
-											<li><a href="#">Entrar</a></li>
-											<li><a href="#">Sobre nós</a></li>
+
+											<li><a href="#">ola@treinar.me</a></li>
+											<li><a href="https://www.facebook.com/treinarme"><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;treinarme</a></li>
+											<li><a href="https://www.twitter.com/treinarme"><i class="fa fa-twitter"></i>&nbsp;&nbsp;treinarme</a></li>
 										</ul>
 									</div>
 								</div>

@@ -351,7 +351,7 @@ a:hover { border-color: #48ADD6; }
 	.banner-search .tab-title { color: #666; background-color: rgba(255,255,255,0.9); border-top: 1px dotted #666; border-right: 1px dotted #666; }
 	.banner-search .tab-title:hover { background-color: rgba(255,255,255,1); }
 	.banner-search .tab-title > a { color: #666; font-size: 15px; }
-	.banner-search .tab-title.active { background-color: rgba(255,255,255,0.95); border-top: 1px dotted #666; border-right: 1px dotted #666; }
+	.banner-search .tab-title.active { background-color: rgba(255,255,255,0.95); border-top: 1px dotted #666; border-right: 1px dotted #666; border-left: 1px dotted #666; }
 	.banner-search .tab-title.active > a { color: #1D96C7; font-size: 15px; font-weight: 600; }
 	.banner-search .tab-content-list { background-color: rgba(255,255,255,0.95); border-color: #48ADD6; }
 
@@ -701,6 +701,6 @@ background-image: -ms-radial-gradient(closest-corner,rgba(16,47,70,0) 60%,rgba(1
 
 	@media ( max-width: 480px ) {
 
-		.button.search { display: block; width: 100%; }
+		.button.search { display: block; width: 100%; margin-top: 10px; }
 
 	}
