@@ -61,6 +61,11 @@ requestInstructor = function() {
             "email": "mauro.kobayashi@gmail.com",
             "name": "Mauro Kobayashi",
             "type": "to"
+          },
+          {
+            "email": "wiehen@gmail.com",
+            "name": "Holger Wiehen",
+            "type": "to"
           }
         ],
         "important": true
