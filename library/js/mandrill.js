@@ -27,6 +27,7 @@ requestInstructor = function() {
   }
 
   now = new Date();
+  referrer = $(document).referrer
   metadata = "";
 
   subject = "[Treinar.me] "+fullname+" buscou um personal trainer em "+place
@@ -41,6 +42,7 @@ requestInstructor = function() {
   body+= "<li>Prioridade: "+priority+"</li>";
   body+= "<li>Data: "+now+"</li>";
   body+= "<li>ID: "+uuid+"</li>";
+  body+= "<li>Referrer: "+referrer+"</li>";
   body+= "<li>Metadata: "+metadata+"</li>";
   body+= "</ul>";
 
