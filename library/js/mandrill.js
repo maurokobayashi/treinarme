@@ -150,7 +150,7 @@ publishWorkouts = function() {
       type: "profissional"
     }
   );
-  heap.track('submit-search-instructor', {});
+  heap.track('submit-request-invite', {});
 
   // send e-mail
   $.ajax({
@@ -181,11 +181,11 @@ publishWorkouts = function() {
       "ip_pool": "Main Pool"
     },
     success: function(data) {
-      heap.track('submit-requst-invite-success', {});
+      heap.track('submit-request-invite-success', {});
       alert("O convite foi solicitado. Nossa equipe entrará em contato por e-mail ou telefone ainda hoje.");
     },
     error: function() {
-      heap.track('submit-requst-invite-error', {});
+      heap.track('submit-request-invite-error', {});
       alert("Houve um erro. Por favor, entre em contato pelo e-mail ola@treinar.me para que possamos lhe enviar um convite.");
     }
   });
