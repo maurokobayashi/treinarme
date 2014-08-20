@@ -193,7 +193,7 @@
 
 		var placeholder = select.data( 'placeholder' ) ? select.data( 'placeholder' ) : select.find( 'option:eq(0)' ).text(),
 		clone = self.find( '.select-clone' );
-		self.prepend( '<input class="value-holder" type="text" disabled="disabled" placeholder="' + placeholder + '"><i class="fa fa-chevron-down"></i>' );
+		self.prepend( '<input id="'+select.data('id')+'" class="value-holder" type="text" disabled="disabled" placeholder="' + placeholder + '"><i class="fa fa-chevron-down"></i>' );
 		var value_holder = self.find( '.value-holder' );
 
 		// INPUT PLACEHOLDER FIX FOR IE
