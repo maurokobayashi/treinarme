@@ -26,7 +26,7 @@ a:hover { border-color: #48ADD6; }
 	.default-form input[type=password],
 	.default-form input[type=date],
 	.default-form textarea,
-	.default-form select { color: #999999; background-color: #FFF; border-color: #e6e6e6; }
+	.default-form select { color: #999999; background-color: #FFF; border-color: #e6e6e6; height: 45px; }
 	.default-form input[type=text].active,
 	.default-form input[type=password].active { border-color: #f1155a; }
 	.default-form input[type=text].error,
@@ -384,7 +384,7 @@ a:hover { border-color: #48ADD6; }
 		PAGE HEADER
 	------------------------------------------------------------------------- */
 
-	.page-header.has-nav { border-color: #48ADD6; }
+	.page-header.has-nav { border-color: transparent; }
 	.page-header h1 { color: #FFF; text-shadow: 0 1px 1px rgba(0,0,0,0.25); }
 	.page-header .breadcrumbs { color: #FFF; background-color: rgba(0,0,0,0.6); }
 	.page-header-nav a { color: #423338; background-color: #FFF; }
@@ -392,7 +392,8 @@ a:hover { border-color: #48ADD6; }
 	.page-about-us .page-header { background-image: url( '../../../dummies/page_header_01.jpg' ); }
 	.page-contact-us .page-header,
 	.page-privacy-policy .page-header,
-	.page-terms-conditions .page-header { background-image: url( '../../../dummies/page_header_02.jpg' ); }
+	.page-terms-conditions .page-header { background-image: url( '../../../bg3.png' ); }
+	.page-contact-us { border-bottom: 2px dotted #cecece; }
 	.page-search-results .page-header {
 	 	/*background-image: url( '../../../dummies/page_header_03.jpg' ); */
 	background: #00396f;
