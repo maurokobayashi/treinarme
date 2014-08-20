@@ -5,11 +5,11 @@ requestInstructor = function() {
   fullname = $('#fullname').val();
   mobile = $('#mobile').val();
   email = $('#email').val();
-  activity = $('#activity').val();
+  goal = $('#activity').val();
   place = $('#place').val();
   priority = $('#criteria').val();
 
-  if(activity == "" || activity == undefined) {
+  if(goal == "" || goal == undefined) {
     alert("Informe o seu objetivo");
     return;
   }
@@ -37,7 +37,7 @@ requestInstructor = function() {
   body+= "<li>Nome: "+fullname+"</li>";
   body+= "<li>Telefone: "+mobile+"</li>";
   body+= "<li>E-mail: "+email+"</li>";
-  body+= "<li>Objetivo: "+activity+"</li>";
+  body+= "<li>Objetivo: "+goal+"</li>";
   body+= "<li>Local: "+place+"</li>";
   body+= "<li>Prioridade: "+priority+"</li>";
   body+= "<li>Data: "+now+"</li>";
@@ -46,6 +46,18 @@ requestInstructor = function() {
   body+= "<li>Metadata: "+metadata+"</li>";
   body+= "</ul>";
 
+  // identify user at heap analytics
+  heap.identify(
+    {
+      name: fullname,
+      goal: activity,
+      place: place,
+      priority: priority,
+      mobile: mobile
+    }
+  );
+
+  // send e-mail
   $.ajax({
     type: "POST",
     url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -74,10 +86,12 @@ requestInstructor = function() {
       "ip_pool": "Main Pool"
     },
     success: function(data) {
-      alert("E-mail enviado");
+      heap.track('submit-search-instructor-success', {});
+      alert("Busca feita com sucesso. Nossa equipe já está selecionando os melhores personal trainers, e entrará em contato por telefone em alguns minutos.");
     },
     error: function() {
-      alert("Deu algum rolo...");
+      heap.track('submit-search-instructor-error', {});
+      alert("Houve um erro. Por favor, entre em contato pelo e-mail ola@treinar.me para que possamos lhe indicar os melhores personal trainers.");
     }
   });
 };
