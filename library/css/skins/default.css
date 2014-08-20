@@ -26,7 +26,7 @@ a:hover { border-color: #48ADD6; }
 	.default-form input[type=password],
 	.default-form input[type=date],
 	.default-form textarea,
-	.default-form select { color: #999999; background-color: #FFF; border-color: #e6e6e6; height: 45px; }
+	.default-form select { color: #555; background-color: #FFF; border-color: #e6e6e6; height: 45px; }
 	.default-form input[type=text].active,
 	.default-form input[type=password].active { border-color: #f1155a; }
 	.default-form input[type=text].error,
@@ -49,7 +49,7 @@ a:hover { border-color: #48ADD6; }
 	.default-form .select-box .select-clone { background-color: #FFF; border-color: #e6e6e6; }
 	.default-form .select-box .select-clone > li { color: #999999; }
 	.default-form .select-box .select-clone > li:hover { color: #FFF; background-color: #48ADD6; }
-	.default-form .select-box.error .value-holder { border-color: #48ADD6; }
+	.default-form .select-box.error .value-holder { border-color: #f1155a; }
 
 	/* CALENDAR */
 	.default-form .calendar-input .fa { color: #fff; }

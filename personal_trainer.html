@@ -136,7 +136,7 @@
 
 								<h3>Solicite um convite.</h3>
 								<h4>Entraremos em contato por e-mail ou telefone ainda hoje.</h4>
-								<form id="contact-form" class="default-form">
+								<form class="default-form">
 
 									<!-- FORM VALIDATION ERROR MESSAGE : begin -->
 									<p class="alert-message warning validation" style="display: none;"><i class="ico fa fa-exclamation-circle"></i><strong> Preencha todos os campos</strong></p>
@@ -148,23 +148,20 @@
 
 									<div class="row">
 										<div class="col-sm-6">
-											<p><input type="text" id="field_name" name="field_name" class="required" placeholder="Nome completo"></p>
+											<p><input type="text" id="fullname" name="field_name" class="required" placeholder="Nome completo"></p>
 										</div>
 										<div class="col-sm-6">
-											<p><input type="text" id="field_email" name="field_email" class="required email" placeholder="E-mail"></p>
-											<p class="contact-hp-email">
-												<input type="text" id="field_email_hp" name="field_email_hp">
-											</p>
+											<p><input type="text" id="email" name="field_email" class="required email" placeholder="E-mail"></p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-sm-6">
-											<p><input type="text" id="field_phone" name="field_phone" class="required" placeholder="Celular"></p>
+											<p><input type="text" id="mobile" name="field_phone" class="required" placeholder="Celular"></p>
 										</div>
 										<div class="col-sm-6">
 											<p>
 												<span class="select-box">
-													<select id="field_subject" name="field_subject" class="required" data-placeholder="Eu sou...">
+													<select id="category" name="field_subject" class="required" data-placeholder="Eu sou...">
 														<option>Eu sou...</option>
 														<option value="Personal trainer">Personal trainer</option>
 														<option value="Estudante">Estudante</option>
@@ -176,20 +173,19 @@
 											</p>
 										</div>
 									</div>
-									<p><textarea id="field_message" name="field_message" class="required" placeholder="Observações ou dúvidas"></textarea></p>
+									<p><textarea id="message" name="field_message" placeholder="Observações ou dúvidas"></textarea></p>
 									<div class="row">
 										<div class="col-sm-6">
-											<p class="form-note">Preencha todos os campos</p>
+											<p class="form-note">*Preencha todos os campos</p>
 										</div>
 										<div class="col-sm-6">
-											<p class="form-submit"><button class="button submit-btn" data-loading-label="Enviando..."><i class="fa fa-envelope"></i> Quero um convite</button></p>
+											<p class="form-submit">
+												<button class="button submit-btn" type="button" onclick="publishWorkouts();" data-loading-label="Enviando..."><i class="fa fa-envelope"></i> Quero um convite</button>
+											</p>
 										</div>
 									</div>
-
 								</form>
-
 							</div>
-
 						</div>
 					</div>
 
