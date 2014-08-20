@@ -537,8 +537,12 @@ body.enable-fixed-header { padding-top: 84px; }
 		font-weight: 500;
 		padding-left: 170px;
 	}
+	.value-proposition .subheading underline {
+		text-decoration: underline;
+	}
 	.value-proposition .subheading strong {
 		font-weight: 900;
+		color: #48ADD6;
 	}
 	.value-proposition .call-to-action {
 		margin-top: 20px;
@@ -563,7 +567,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.banner-search form > * { margin-left: 3px; }
 	.banner-search form > *:first-child { margin-left: 0; }
 	.banner-search input { width: 100%; }
-	.banner-search .offer-place input { padding-left: 30px; max-width: 180px; }
+	.banner-search .offer-place input { max-width: 175px; }
 	.banner-search .fullname input { max-width: 175px; }
 	.banner-search .email input { max-width: 200px; }
 	.banner-search .mobile input { max-width: 140px; }
@@ -572,7 +576,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.banner-search .calendar-input input,
 	.banner-search .calendar-input li { font-size: 15px; border-radius: 3px; }
 	.banner-search .select-box { max-width: 150px; text-align: left; }
-	.banner-search .select-box.activity { max-width: 210px; }
+	.banner-search .select-box.activity { max-width: 215px; }
 	.banner-search .select-box.place { max-width: 180px; }
 	.banner-search .select-box.period { max-width: 115px; }
 	.banner-search .select-box.people { max-width: 130px; }
@@ -1279,7 +1283,6 @@ body.enable-fixed-header { padding-top: 84px; }
 	.banner-search input { height: 25px; }
 	.banner-search .select-box.activity {  max-width: 100%; display: inline-block; }
 	.banner-search .offer-place input { padding-left: 15px; margin-bottom: 5px; max-width: 100%; display: inline-block; }
-	.banner-search .fa.fa-map-marker { display: none; }
 	.banner-search .select-box.criteria { margin-bottom: 5px; max-width: 100%; display: inline-block; }
 	.banner-search .fullname input { margin-bottom: 5px; max-width: 100%; display: inline-block; }
 	.banner-search .mobile input { margin-bottom: 5px; max-width: 100%; display: inline-block; }
