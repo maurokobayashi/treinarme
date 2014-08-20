@@ -56,6 +56,7 @@ requestInstructor = function() {
       mobile: mobile
     }
   );
+  heap.track('submit-search-instructor', {});
 
   // send e-mail
   $.ajax({
