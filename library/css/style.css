@@ -81,7 +81,7 @@ body.enable-fixed-header { padding-top: 84px; }
 	.default-form input[type=password],
 	.default-form input[type=date],
 	.default-form select,
-	.default-form textarea { margin: 0; padding: 10px 15px; width: 100%; border-radius: 3px; border: 1px solid transparent; font: 16px 'Varela Round', sans-serif;
+	.default-form textarea { margin: 0; padding: 6px 10px; width: 100%; border-radius: 3px; border: 1px solid transparent; font: 15px 'Varela Round', sans-serif;
 		-webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 	.default-form select { padding: 8px 15px; width: 100%; }
 	.default-form textarea { min-height: 100px; }
@@ -567,20 +567,20 @@ body.enable-fixed-header { padding-top: 84px; }
 	.banner-search form > * { margin-left: 3px; }
 	.banner-search form > *:first-child { margin-left: 0; }
 	.banner-search input { width: 100%; }
-	.banner-search .offer-place input { max-width: 175px; }
-	.banner-search .fullname input { max-width: 175px; }
+	.banner-search .offer-place input { max-width: 220px; }
+	.banner-search .fullname input { max-width: 170px; }
 	.banner-search .email input { max-width: 200px; }
-	.banner-search .mobile input { max-width: 140px; }
+	.banner-search .mobile input { max-width: 130px; }
 	.banner-search .search-input { display: inline-block; width: 100%; max-width: 250px; }
 	.banner-search .calendar-input { max-width: 150px; text-align: left; }
 	.banner-search .calendar-input input,
 	.banner-search .calendar-input li { font-size: 15px; border-radius: 3px; }
 	.banner-search .select-box { max-width: 150px; text-align: left; }
-	.banner-search .select-box.activity { max-width: 215px; }
+	.banner-search .select-box.activity { max-width: 200px; }
 	.banner-search .select-box.place { max-width: 180px; }
 	.banner-search .select-box.period { max-width: 115px; }
 	.banner-search .select-box.people { max-width: 130px; }
-	.banner-search .select-box.criteria { max-width: 160px; }
+	.banner-search .select-box.criteria { max-width: 150px; }
 	.banner-search .select-box .select-clone { border: 0; }
 	.banner-search .select-box input,
 	.banner-search .select-box select,

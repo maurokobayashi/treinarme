@@ -25,6 +25,40 @@
 		<script src="library/js/respond.min.js" type="text/javascript"></script>
     <![endif]-->
 		<script src="library/js/modernizr.custom.min.js" type="text/javascript"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+  	<script>
+			var placeSearch, autocomplete;
+
+			function initialize() {
+			  // Create the autocomplete object, restricting the search
+			  // to geographical location types.
+			  autocomplete = new google.maps.places.Autocomplete(
+			      /** @type {HTMLInputElement} */(document.getElementById('place-autocomplete')),
+			      { types: ['geocode'] });
+			  // When the user selects an address from the dropdown,
+			  // populate the address fields in the form.
+			  google.maps.event.addListener(autocomplete, 'place_changed', function() {
+			    fillInAddress();
+			  });
+			}
+
+			// [START region_geolocation]
+			// Bias the autocomplete object to the user's geographical location,
+			// as supplied by the browser's 'navigator.geolocation' object.
+			function geolocate() {
+			  if (navigator.geolocation) {
+			    navigator.geolocation.getCurrentPosition(function(position) {
+			      var geolocation = new google.maps.LatLng(
+			          position.coords.latitude, position.coords.longitude);
+			      autocomplete.setBounds(new google.maps.LatLngBounds(geolocation,
+			          geolocation));
+			    });
+			  }
+			}
+			// [END region_geolocation]
+    </script>
+
 	</head>
 
 	<body class="enable-fixed-header enable-inview-animations">
@@ -143,37 +177,40 @@
 									</span>
 									<!-- CELULAR : end -->
 
+									<!-- PLACE : begin -->
+									<span class="offer-place">
+							    	<input id="place-autocomplete" class="required" placeholder="Local do treino (ex. Moema)" onFocus="geolocate()" type="text"></input>
+									</span>
+									<!-- PLACE : end -->
+
 									<!-- ATIVIDADE : begin -->
 									<span class="select-box activity" title="Qual o seu objetivo?">
 										<select data-id="activity" name="activity" data-placeholder="Qual o seu objetivo?">
 											<option value="">Qual o seu objetivo?</option>
+											<option value="Perder peso">Perder peso</option>
+											<option value="Ganhar músculos">Ganhar músculos</option>
+											<option value="Manter a saúde">Manter a saúde</option>
+											<option value="-">----------------------</option>
 											<option value="Condicionamento físico">Condicionamento físico</option>
+											<option value="Correção postural">Correção postural</option>
 											<option value="Corrida ou caminhada">Corrida ou caminhada</option>
 											<option value="Emagrecimento">Emagrecimento</option>
 											<option value="Fortalecimento">Fortalecimento</option>
-											<option value="Hipertrofia">Hipertrofia</option>
-											<option value="Musculação">Musculação</option>
-											<option value="Terceira idade">Terceira idade</option>
-											<option value="-">----------------------</option>
-											<option value="Correção postural">Correção postural</option>
 											<option value="Gravidez">Gravidez</option>
+											<option value="Hipertrofia">Hipertrofia</option>
 											<option value="Lutas">Lutas</option>
+											<option value="Musculação">Musculação</option>
 											<option value="Natação ou hidroginástica">Natação ou hidroginástica</option>
 											<option value="Pilates">Pilates</option>
 											<option value="Portadores de necessidades">Portadores de necessidades</option>
 											<option value="Pós operatório">Pós operatório</option>
 											<option value="Preparação para testes">Preparação para testes</option>
+											<option value="Terceira idade">Terceira idade</option>
 											<option value="Treinamento funcional">Treinamento funcional</option>
 											<option value="Outra...">Outra...</option>
 										</select>
 									</span>
 									<!-- ATIVIDADE : end -->
-
-									<!-- PLACE : begin -->
-									<span class="offer-place">
-										<input id="place" class="required" type="text" placeholder="Bairro (ex: Moema)">
-									</span>
-									<!-- PLACE : end -->
 
 									<!-- CRITERIA : begin -->
 									<span class="select-box criteria" title="Priorizar por">
@@ -196,7 +233,6 @@
 								</form>
 							</li>
 							<!-- SEARCH : end -->
-
 						</ul>
 					</div>
 				</div>
@@ -218,7 +254,7 @@
 							<!-- SERVICE 1 : begin -->
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-search"></i></p>
-								<h3 class="service-title">Faça uma busca</h3>
+								<h3 class="service-title">1. Faça uma busca</h3>
 								<p>Informe seu objetivo, local de treino e o critério de seleção (mais recomendados, melhores preços ou mais experientes).</p>
 							</div>
 							<!-- SERVICE 1 : end -->
@@ -229,7 +265,7 @@
 							<!-- SERVICE 2 : begin -->
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-phone"></i></p>
-								<h3 class="service-title">Atenda o telefone</h3>
+								<h3 class="service-title">2. Atenda o telefone</h3>
 								<p>Em alguns minutos nossa equipe irá analisar suas necessidades e entrar em contato para te indicar os melhores personal trainers.</p>
 							</div>
 							<!-- SERVICE 2 : end -->
@@ -240,7 +276,7 @@
 							<!-- SERVICE 3 : begin -->
 							<div class="service-container">
 								<p class="service-icon"><i class="fa fa-heart"></i></p>
-								<h3 class="service-title">Sinta-se melhor</h3>
+								<h3 class="service-title">3. Sinta-se melhor</h3>
 								<p>Amarre o tênis e vamos treinar! Queremos que ao final do dia você se sinta melhor, mais saudável e com orientação profissional.</p>
 							</div>
 							<!-- SERVICE 3 : end -->
@@ -272,7 +308,7 @@
 
 						<!-- TESTIMONIAL 1 : begin -->
 						<div class="testimonial">
-							<p class="portrait"><img src="http://uouapps.com/casa2/dummies/portrait_02_200.jpg" alt="Ricardo F."></p>
+							<p class="portrait"><img src="test1.png" alt="Ricardo F."></p>
 							<blockquote class="quote">
 								<p>"Queria treinar na academia do condomínio, por isso procurei um personal trainer que atendesse no meu bairro. Fechei um pacote mensal e na mesma semana já estava treinando."</p>
 								<footer><cite>Ricardo F. (executivo) - São Paulo, SP</cite></footer>
@@ -282,7 +318,7 @@
 
 						<!-- TESTIMONIAL 2 : begin -->
 						<div class="testimonial">
-							<p class="portrait"><img src="http://uouapps.com/casa2/dummies/portrait_01_200.jpg" alt="Julia R."></p>
+							<p class="portrait"><img src="test2.png" alt="Julia R."></p>
 							<blockquote class="quote">
 								<p>"Por recomendação médica, comecei a correr no Pq. do Ibirapuera. Mas queria um profissional que fosse bem avaliado e recomendado pelos clientes."</p>
 								<footer><cite>Julia R. (estudante) - São Paulo, SP</cite></footer>
@@ -435,6 +471,8 @@
 	        scrollTop: $('#why').offset().top-84
 	    	}, 800);
 			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
 
 		<script type="text/javascript">

@@ -6,23 +6,23 @@ requestInstructor = function() {
   mobile = $('#mobile').val();
   email = $('#email').val();
   goal = $('#activity').val();
-  place = $('#place').val();
+  place = $('#place-autocomplete').val();
   priority = $('#criteria').val();
 
-  if(goal == "" || goal == undefined) {
-    alert("Informe o seu objetivo");
-    return;
-  }
-  if(place == "" || place == undefined) {
-    alert("Informe o bairro onde deseja treinar");
-    return;
-  }
   if(fullname == "" || fullname == undefined) {
     alert("Informe seu nome completo");
     return;
   }
   if(mobile == "" || mobile == undefined) {
     alert("Informe seu celular para que possamos entrar em contato");
+    return;
+  }
+  if(place == "" || place == undefined) {
+    alert("Informe o bairro onde deseja treinar");
+    return;
+  }
+  if(goal == "" || goal == undefined) {
+    alert("Informe o seu objetivo");
     return;
   }
 

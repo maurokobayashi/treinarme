@@ -359,7 +359,7 @@ a:hover { border-color: #48ADD6; }
 	/* FORM */
 	.banner-search input[type=text],
 	.banner-search input[type=password],
-	.banner-search select { font-size: 14px; color: #333; background-color: #fff; border-color: #cecece; height: 45px; }
+	.banner-search select { font-size: 13px; font-weight: 600; letter-spacing: -.03em; color: #333; background-color: #fff; border-color: #cecece; height: 45px; }
 	.banner-search input[type=text].active,
 	.banner-search input[type=password].active { border-color: #48ADD6; }
 	.banner-search .calendar-input .fa { color: #48ADD6; }
