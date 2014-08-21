@@ -118,8 +118,16 @@ a:hover { border-color: #48ADD6; }
 	}
 	.button.how-it-works:hover,
 	.button.more-info:hover {
-		color: #fff;
-		background-color: #666; border-color: #666; }
+		color: #fff; background-color: #666; border-color: #666;
+	}
+	.button.request-invite {
+		color: #fff; font-size: 16px; letter-spacing: .06em;
+		border: 1px solid #48ADD6; border-radius: 25px; background-color: #48ADD6;
+		padding: 5px 40px; margin-top: 15px;
+	}
+	.button.request-invite:hover {
+		color: #48ADD6; background-color: #fff; border-color: #48ADD6;
+	}
 	.button.find-instructor {
 		color: #48ADD6; font-size: 16px; font-weight:600; letter-spacing: .06em;
 		border-radius: 25px; background-color: #fff;
@@ -393,7 +401,7 @@ a:hover { border-color: #48ADD6; }
 	.page-contact-us .page-header,
 	.page-privacy-policy .page-header,
 	.page-terms-conditions .page-header { background-image: url( '../../../bg3.png' ); }
-	.page-contact-us { border-bottom: 2px dotted #cecece; }
+	.request-invite { border-top: 2px dotted #cecece; }
 	.page-search-results .page-header {
 	 	/*background-image: url( '../../../dummies/page_header_03.jpg' ); */
 	background: #00396f;

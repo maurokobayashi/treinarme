@@ -57,13 +57,13 @@
 
 							<!-- HEADER REGISTER : begin -->
 							<div class="header-register">
-								<button class="register-toggle header-btn" onclick="requestInvite();">Divulgue suas aulas</button>
+								<button class="login-toggle header-btn" onclick="howItWorks();">Como funciona</button>
 							</div>
 							<!-- HEADER REGISTER : end -->
 
 							<!-- HEADER LOGIN : begin -->
 							<div class="header-login">
-								<button class="login-toggle header-btn" onclick="howItWorks();">Como funciona</button>
+								<button class="register-toggle header-btn" onclick="requestInvite();">Divulgue suas aulas</button>
 							</div>
 							<!-- HEADER LOGIN : end -->
 
@@ -104,14 +104,73 @@
 								Sua rede aberta de contatos e indicações.
 								<br>Divulgue suas aulas para milhares de potenciais clientes.
 							</small>
+							<a href="#" onclick="requestInvite();" class="button request-invite">Solicitar convite</a>
 						</h1>
 					</div>
 				</div>
 			</div>
 			<!-- PAGE HEADER : end -->
 
+
+			<!-- HOW IT WORKS : begin -->
+			<div id="how-it-works">
+
+				<!-- CONTENT SECTION - SERVICES : begin -->
+				<section class="content-section services">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+
+								<!-- SERVICE 1 : begin -->
+								<div class="service-container">
+									<p class="service-icon"><i class="fa fa-plus"></i></p>
+									<h3 class="service-title">1. Crie seu perfil</h3>
+									<p>Crie seu perfil em poucos minutos. Configure seus horários, valores cobrados, especialidades e que perfil de cliente deseja.</p>
+								</div>
+								<!-- SERVICE 1 : end -->
+
+							</div>
+							<div class="col-sm-4">
+
+								<!-- SERVICE 2 : begin -->
+								<div class="service-container">
+									<p class="service-icon"><i class="fa fa-users"></i></p>
+									<h3 class="service-title">2. Apareça pro mercado</h3>
+									<p>Imediatamente seu perfil estará disponível para milhares de potenciais clientes 24hs por dia, 7 dias por semana.</p>
+								</div>
+								<!-- SERVICE 2 : end -->
+
+							</div>
+							<div class="col-sm-4">
+
+								<!-- SERVICE 3 : begin -->
+								<div class="service-container">
+									<p class="service-icon"><i class="fa fa-signal"></i></p>
+									<h3 class="service-title">3. Aumente sua receita</h3>
+									<p>Controle o fluxo de clientes que chegam até você pelo Treinar.me e veja sua receita aumentar rapidamente, sem investimento.</p>
+								</div>
+								<!-- SERVICE 3 : end -->
+
+							</div>
+						</div>
+
+						<div class="guarantee row">
+							<p>
+					      <img alt="Shield" height="30" src="guarantee.png" style="margin-right: 10px; vertical-align: -8px" width="25">
+					      <strong>Sua rede de contatos e indicações.</strong> Nunca mais trabalhe numa academia apenas para conseguir clientes.
+					    </p>
+						</div>
+					</div>
+				</section>
+				<!-- CONTENT SECTION - SERVICES : end -->
+
+			</div>
+			<!-- HOW IT WORKS : end -->
+
+
+
 			<!-- CONTENT SECTION : begin -->
-			<section id="request-invite" class="content-section">
+			<section id="request-invite" class="content-section request-invite">
 				<div class="container">
 
 					<div class="row">
@@ -128,7 +187,7 @@
 
 							<p>Holger Wiehen<br>
 							São Paulo, SP<br>
-							holger@gmail.com</p>
+							wiehen@gmail.com</p>
 						</div>
 						<div class="col-sm-7">
 
@@ -196,60 +255,6 @@
 		</div>
 		<!-- CORE : end -->
 
-		<!-- CORE : begin -->
-		<div id="how-it-works">
-
-			<!-- CONTENT SECTION - SERVICES : begin -->
-			<section class="content-section services">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4">
-
-							<!-- SERVICE 1 : begin -->
-							<div class="service-container">
-								<p class="service-icon"><i class="fa fa-plus"></i></p>
-								<h3 class="service-title">1. Crie seu perfil</h3>
-								<p>Crie seu perfil em poucos minutos. Configure seus horários, valores cobrados, especialidades e que perfil de cliente deseja.</p>
-							</div>
-							<!-- SERVICE 1 : end -->
-
-						</div>
-						<div class="col-sm-4">
-
-							<!-- SERVICE 2 : begin -->
-							<div class="service-container">
-								<p class="service-icon"><i class="fa fa-users"></i></p>
-								<h3 class="service-title">2. Apareça pro mercado</h3>
-								<p>Imediatamente seu perfil estará disponível para milhares de potenciais clientes 24hs por dia, 7 dias por semana.</p>
-							</div>
-							<!-- SERVICE 2 : end -->
-
-						</div>
-						<div class="col-sm-4">
-
-							<!-- SERVICE 3 : begin -->
-							<div class="service-container">
-								<p class="service-icon"><i class="fa fa-signal"></i></p>
-								<h3 class="service-title">3. Aumente sua receita</h3>
-								<p>Controle o fluxo de clientes que chegam até você pelo Treinar.me e veja sua receita aumentar rapidamente, sem investimento.</p>
-							</div>
-							<!-- SERVICE 3 : end -->
-
-						</div>
-					</div>
-
-					<div class="guarantee row">
-						<p>
-				      <img alt="Shield" height="30" src="guarantee.png" style="margin-right: 10px; vertical-align: -8px" width="25">
-				      <strong>Sua rede de contatos e indicações.</strong> Nunca mais trabalhe numa academia apenas para conseguir clientes.
-				    </p>
-					</div>
-				</div>
-			</section>
-			<!-- CONTENT SECTION - SERVICES : end -->
-
-		</div>
-		<!-- CORE : end -->
 
 
 
@@ -341,24 +346,6 @@
 							</div>
 						</div>
 						<!-- LINKS WIDGET : end -->
-
-					</div>
-					<div class="col-sm-3">
-
-						<!-- NEWSLETTER WIDGET : begin -->
-						<div class="widget newsletter-widget">
-							<h3 class="widget-title"><span>Fique por dentro</span></h3>
-							<div class="widget-content">
-								<form class="default-form" action="index.html">
-									<p class="alert-message warning"><i class="ico fa fa-exclamation-circle"></i> Informe seu e-mail</p>
-									<div class="input-group">
-										<input class="required email" type="text" placeholder="Seu e-mail">
-										<button><i class="fa fa-plus-circle"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<!-- NEWSLETTER WIDGET : end -->
 
 					</div>
 				</div>
