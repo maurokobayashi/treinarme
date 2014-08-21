@@ -66,17 +66,12 @@ requestInstructor = function() {
       "message": {
         "html": body,
         "subject": subject,
-        "from_email": "ola@treinar.me",
-        "from_name": "Treinar.me",
+        "from_email": "lead@treinar.me",
+        "from_name": "Lead Treinar.me",
         "to": [
           {
-            "email": "mauro.kobayashi@gmail.com",
-            "name": "Mauro Kobayashi",
-            "type": "to"
-          },
-          {
-            "email": "wiehen@gmail.com",
-            "name": "Holger Wiehen",
+            "email": "ola@treinar.me",
+            "name": "Treinar.me",
             "type": "to"
           }
         ],
@@ -162,17 +157,12 @@ publishWorkouts = function() {
       "message": {
         "html": body,
         "subject": subject,
-        "from_email": "ola@treinar.me",
-        "from_name": "Treinar.me",
+        "from_email": "lead@treinar.me",
+        "from_name": "Lead Treinar.me",
         "to": [
           {
-            "email": "mauro.kobayashi@gmail.com",
-            "name": "Mauro Kobayashi",
-            "type": "to"
-          },
-          {
-            "email": "wiehen@gmail.com",
-            "name": "Holger Wiehen",
+            "email": "ola@treinar.me",
+            "name": "Treinar.me",
             "type": "to"
           }
         ],
