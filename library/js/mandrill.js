@@ -87,7 +87,8 @@ requestInstructor = function() {
     },
     success: function(data) {
       heap.track('submit-search-instructor-success', {});
-      alert("Busca feita com sucesso. Nossa equipe já está selecionando os melhores personal trainers, e entrará em contato por telefone em alguns minutos.");
+      alert("Busca feita com sucesso. Nossa equipe já está selecionando os melhores personal trainers, e entrará em contato com você por telefone em alguns minutos.");
+      location.reload();
     },
     error: function() {
       heap.track('submit-search-instructor-error', {});
@@ -182,7 +183,8 @@ publishWorkouts = function() {
     },
     success: function(data) {
       heap.track('submit-request-invite-success', {});
-      alert("O convite foi solicitado. Nossa equipe entrará em contato por e-mail ou telefone ainda hoje.");
+      alert("O convite foi solicitado. Nossa equipe entrará em contato com você por e-mail ou telefone ainda hoje.");
+      location.reload();
     },
     error: function() {
       heap.track('submit-request-invite-error', {});

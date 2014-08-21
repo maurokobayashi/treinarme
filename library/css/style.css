@@ -601,7 +601,7 @@ body.enable-fixed-header { padding-top: 84px; }
 
 	.page-header { background-position: center; background-size: cover; }
 	.page-header.has-nav { border-bottom: 3px solid transparent; }
-	.page-header-inner { position: relative; height: 260px; }
+	.page-header-inner { position: relative; height: 280px; }
 	.page-header h1 { float: right; margin-top: 44px; max-width: 50%; font-size: 1.875em; line-height: 1.1em; }
 	.page-header h1 small { font-size: 60%; line-height: 1em; }
 	.page-header.has-nav h1 { margin-top: 58px; }
